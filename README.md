@@ -1,3 +1,9 @@
+In order to setup a custom server for blitz, you will have to follow the same steps as setting up a custom server for next. The only files you should have to change are:
+- tsconfig.server.json (it extends the default tsconfig and is used to start the custom server)
+- server/index.ts (this is where you do the server setup)
+- package.json (dev script is used to start the custom server, it uses ts-node to run the server/index.ts file)
+
+
 [![Blitz.js](https://raw.githubusercontent.com/blitz-js/art/master/github-cover-photo.png)](https://blitzjs.com)
 
 This is a [Blitz.js](https://github.com/blitz-js/blitz) app.
